@@ -2103,10 +2103,17 @@ function closePanel(){
   panel.classList.remove('collapsed');
   gwrap.classList.remove('panel-open');
   gwrap.classList.remove('panel-collapsed');
+  document.body.classList.remove('panel-open');
   const _pa=document.getElementById('panel-actions');if(_pa)_pa.classList.remove('vis');
   selNode=null;
   connectedNodes=new Set();
+  relatedNodes=new Set();
   multiSel.clear();
+  activeThread=null;
+  hovNode=null;
+  document.querySelectorAll('.thread-item').forEach(el=>el.classList.remove('active'));
+  const rfb=document.getElementById('reset-filter-btn');
+  if(rfb) rfb.style.display='none';
   updateMultiBar();
 }
 
