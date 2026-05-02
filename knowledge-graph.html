@@ -1573,6 +1573,17 @@ const SYNTH_LIBRARY = [
     ]
   },
 
+  {
+    match: ids => ids.includes('muller') && ids.includes('grid') && !ids.includes('reduction') && !ids.includes('objectivity') && !ids.includes('its'),
+    title: 'The grid is an aid, not a guarantee',
+    narr: `<p>Josef Müller-Brockmann is the person most responsible for turning the grid — an invisible structure of columns and rows used to organize a page — into a serious professional tool rather than a personal preference. By the 1950s his concert posters for the Zürich Tonhalle had shown what grid-based design looked like at its best: every element placed with clear purpose, the layout legible at a glance without announcing its own system. His 1981 book Grid Systems in Graphic Design then codified the logic — how to construct a grid from the proportions of the page itself, how to use it consistently, how to make structure and content work together.</p><p>His most quoted line from that book is also its most important: the grid system is an aid, not a guarantee. He was precise about what the grid could and couldn't do. It could provide a rational framework for placing elements, make layouts more consistent and readable, and help a designer make decisions systematically rather than arbitrarily. What it couldn't do was replace judgment — the sense of what a piece of communication actually needed, what mattered most, when to break the structure deliberately. The designers who used his book to skip the thinking produced work that looked Swiss without being good.</p>`,
+    tens: [
+      'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the book where the method and its limits are both explained, including the "aid, not a guarantee" framing',
+      'Tonhalle Zürich poster series · Josef Müller-Brockmann · 1951–1971 — the practice the book was trying to describe, where grid and judgment worked together',
+      'Swiss Graphic Design · Richard Hollis · 2006 — provides context for how the grid approach spread and what it produced when applied well and badly',
+    ]
+  },
+
   { match: () => true, title: null, narr: null, tens: ['Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice', 'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice', 'Emil Ruder: Typographie (1967)'] }
 ];
 
