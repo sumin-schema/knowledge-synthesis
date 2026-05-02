@@ -161,7 +161,7 @@ html,body{width:100%;height:100%;background:#06080e;color:var(--txt);font-family
 #sel-rect{position:absolute;display:none;z-index:50;pointer-events:none;border:1px solid rgba(125,207,232,0.45);background:rgba(125,207,232,0.025);}
 
 /* RIGHT PANEL */
-#right{position:fixed;top:0;right:0;bottom:0;width:var(--right-w);border-left:1px solid var(--border);background:rgba(12,14,20,0.95);backdrop-filter:blur(12px);z-index:100;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .4s cubic-bezier(.16,1,.3,1);}
+#right{position:fixed;top:0;right:0;bottom:0;width:var(--right-w);border-left:1px solid var(--border);background:rgba(12,14,20,0.88);backdrop-filter:blur(12px);z-index:100;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .4s cubic-bezier(.16,1,.3,1);}
 #right.open{transform:translateX(0);}
 #right.collapsed{transform:translateX(100%);}
 
@@ -297,7 +297,7 @@ html,body{width:100%;height:100%;background:#06080e;color:var(--txt);font-family
   #left{
     width:100vw; height:auto; bottom:auto;
     border-right:none; border-bottom:1px solid var(--border);
-    background:rgba(12,14,20,0.98)!important;
+    background:rgba(12,14,20,0.88)!important;
     z-index:200; position:fixed; top:0; left:0;
   }
   #left-top{ padding:16px 16px 10px; }
@@ -349,7 +349,7 @@ html,body{width:100%;height:100%;background:#06080e;color:var(--txt);font-family
     border-left:none; border-top:none; border-radius:0;
     transform:translateY(100%)!important;
     transition:transform .4s cubic-bezier(.16,1,.3,1);
-    background:rgba(12,14,20,0.99)!important;
+    background:rgba(12,14,20,0.88)!important;
     z-index:500!important;
     /* Simple table-like layout */
     display:grid!important;
@@ -373,7 +373,7 @@ html,body{width:100%;height:100%;background:#06080e;color:var(--txt);font-family
     padding:12px 16px!important;
     padding-bottom:max(14px, env(safe-area-inset-bottom))!important;
     border-top:1px solid var(--border)!important;
-    background:rgba(12,14,20,0.99)!important;
+    background:rgba(12,14,20,0.88)!important;
   }
 
 
@@ -506,19 +506,19 @@ const TC = {
 const nodes = [
   // People
   { id:'muller',      label:'Josef Müller-Brockmann', x:-.55, y:-.50, z: .20, r:3, th:['People'],                  meta:'Designer · Educator · Zürich',
-             desc:'Josef Müller-Brockmann is the person most responsible for turning the Swiss approach to design into something the rest of the world could learn from a book. His posters for the Zürich Tonhalle organized information with a mathematical calm that still feels inevitable. When he finally wrote down the method — in Grid Systems in Graphic Design in 1981 — he produced the clearest explanation of how Swiss typography worked. The book spread the system globally. Whether it spread the judgment is a harder question.' },
+             desc:'Josef Müller-Brockmann is the person most responsible for turning Swiss design into a system other designers could actually use. He trained in Zürich, opened his studio in 1936, and by the 1950s had moved toward a precise, objective approach — geometric forms, sans-serif type, grid-based structure — that became the visual language of the International Typographic Style. His concert posters for the Zürich Tonhalle showed that restraint could be dynamic, not bland. His 1981 book Grid Systems in Graphic Design codified the grid method and spread it internationally. As he put it, the grid is an aid, not a guarantee — it gives design a framework, but it cannot replace judgment.' },
   { id:'ruder',       label:'Emil Ruder',        x:-.72, y:-.35, z:-.10, r:3,  th:['People'], meta:'Designer · Educator · Basel',
-             desc:'Emil Ruder taught typography in the Basel School for decades, and his reputation for strictness was well-earned. His classes ran on the principle that type exists to be read, space exists to help you read it, and anything else is a distraction. What made him more than a disciplinarian was that he could explain why — how white space is an active element, how rhythm affects reading, how the visual properties of letterforms are independent of the words they spell. The restraint he taught was never passive. It was a strong position taken against the idea that design should carry emotional weight through form itself.' },
+             desc:'Emil Ruder taught typography at the Basel School of Design for decades, and his reputation for strictness was well-earned. His principle was simple: type exists to be read, space exists to help you read it, and anything else is a distraction. His 1967 book Typographie: A Manual for Design unified theory, practice, and visual discipline in a way that made Basel an international center for modern graphic design. He also helped build the cultural environment that made Adrian Frutiger\'s Univers influential — his teaching didn\'t co-design the typeface, but it created the conditions for it to become part of the Swiss typography canon. In Swiss Style, he stands out as the designer who made typography feel both rigorous and humane.' },
   { id:'hofmann',     label:'Armin Hofmann',     x:-.68, y:-.20, z: .35, r:3,  th:['People'], meta:'Designer · Educator · Basel',
-             desc:'Armin Hofmann taught at the Basel School for over forty years, and the designers who came through his program describe the experience less like school and more like learning to see. His method wasn\'t a system — it was a discipline of attention. Students spent months observing how a single mark relates to the space around it before touching a layout problem. His poster work shows what that judgment produces: spare, precisely placed, never empty. There is no Hofmann look the way there is a Swiss Style look, which is either the limitation of his method or its highest achievement.' },
+             desc:'Armin Hofmann taught at the Basel School of Design for over forty years, and his influence is felt more in how designers were trained than in any single body of work. His teaching gave Swiss Style much of its educational force: students spent months on foundational exercises — working with single marks, learning how a dot or a line affects the space around it — before touching a layout problem. His poster work for the Basel municipal theater showed that minimal form could carry real visual tension. Alongside Josef Müller-Brockmann and Emil Ruder, he helped establish Swiss Style as an international design language, but where Müller-Brockmann gave it structural discipline, Hofmann gave it its pedagogical depth.' },
   { id:'bill',        label:'Max Bill',           x:-.40, y:-.62, z:-.30, r:3,  th:['People'], meta:'Designer · Artist · Architect · Zürich',
-             desc:'Max Bill believed that art, design, and architecture were not separate disciplines but different expressions of the same underlying logic. He studied at the Bauhaus, absorbed its conviction that beauty and function were reconcilable, and spent the rest of his career trying to prove it. When he co-founded the Ulm School in 1953, it was with the explicit goal of creating a new kind of designer: someone equally at home with visual problems and analytical ones. The idea that design should be grounded in systematic thinking rather than artistic intuition is now the default assumption of most design programs. Bill pushed that idea harder and earlier than almost anyone.' },
+             desc:'Max Bill was a Swiss artist, architect, designer, and theorist who studied at the Bauhaus and became one of the most important bridges between Bauhaus principles and the systematic visual language of postwar Swiss design. He worked across painting, sculpture, architecture, industrial design, and graphic design — a rare polymath whose watch design for Junghans is still in production, a clean demonstration of his conviction that beauty and function are the same thing. In 1953 he co-founded the Ulm School of Design with Inge Aicher-Scholl and Otl Aicher, becoming its first rector and shaping its founding vision: design grounded in rational structure, geometry, and mathematics, connected to science and technology rather than art alone.' },
   { id:'weingart',    label:'Wolfgang Weingart',  x:-.30, y:-.42, z: .48, r:3,  th:['People'],                 meta:'Designer · Educator · Basel',
-             desc:'Wolfgang Weingart arrived at the Basel School in the mid-1960s already suspicious of rules. He had learned typesetting as a trade apprentice before coming to the school, which meant he understood the Swiss system from the inside before he started dismantling it. His experiments — stacked type, broken grids, mixed weights — looked chaotic to designers trained in the Ruder tradition. To a younger generation, especially American students who came to the Basel School to study with him, they looked like a door opening. Weingart never called himself a postmodernist and was sometimes uncomfortable with the work that followed. The distinction mattered to him. It is less visible in the work that followed.' },
+             desc:'Wolfgang Weingart trained as a typesetter — someone who physically sets type for printing — before arriving at the Basel School of Design in the mid-1960s. That hands-on background meant he understood Swiss typography from the inside, mechanically and physically, before he started dismantling it. His experiments with spacing, scale, layering, and angled composition looked chaotic to designers trained in the Ruder tradition; to a younger generation, especially American students who came to Basel specifically to study with him, they looked like a door opening. He is often linked to New Wave or Swiss Punk typography, though he resisted the label and said he never wanted to force a single style on students. His influence spread internationally through his teaching as much as his work.' },
   { id:'frutiger',    label:'Adrian Frutiger',    x: .60, y:-.55, z: .25, r:3,  th:['People'],    meta:'Type Designer · Paris · Switzerland',
-             desc:'Adrian Frutiger solved a problem most people don\'t know exists: how do you design a typeface that works at every size, in every context, without losing its identity? His answer was Univers, released in 1957 — 21 variants organized into a numbered grid by weight and width, making the relationships between them explicit and the system legible. His typeface Frutiger, designed for Charles de Gaulle Airport in the early 1970s, was built for letters readable at a distance, at speed, under artificial light. It worked so well it became a general-purpose typeface used far beyond airports. He approached type design as systematic problem-solving, and the results outlasted the problems they were designed to solve.' },
+             desc:'Adrian Frutiger treated type design as a practical public service: letters should be easy to read and useful in real-world systems. His typeface Univers, released in 1957, was groundbreaking for its consistency — 21 coordinated variants organized by a numbered grid of weight and width, designed as a complete system from the start. His typeface Frutiger, designed for Charles de Gaulle Airport signage in the early 1970s, was built around a single constraint: readable at distance, at speed, under artificial light. His later typeface Avenir took geometric structure and softened it with humanist proportions, giving it a cleaner but warmer feel. He bridged hot metal, phototype, and digital typography, and his work remains influential because it balances system and humanity — rigorous without being cold.' },
   { id:'tschichold',  label:'Jan Tschichold',     x:-.20, y:-.65, z:-.40, r:3,  th:['People'],                 meta:'Designer · Typographer · Basel · London',
-             desc:'Jan Tschichold changed his mind in public, and design history has been arguing about it ever since. In 1928 he published Die neue Typographie, the most rigorous argument for rule-based, asymmetric, functional typography ever written — presented not as preference but as correct. Twenty years later he recanted, called his earlier rules authoritarian, and returned to centered, humanist book design. The Swiss designers who had built careers on his early doctrines were baffled. But Tschichold argued he hadn\'t contradicted himself — he had followed the logic of good typography wherever it led, and it led away from the rules he had written. The universality claim Swiss design would go on to make was something even its most rigorous proponent had eventually rejected.' },
+             desc:'Jan Tschichold was a German-born typographer who in 1928 published Die neue Typographie, the most forceful argument anyone had yet made for modernist typography: asymmetric layouts, sans-serif type, and the removal of decoration in service of communication. The book helped launch the break from classical tradition that Swiss Style would later build on — Tschichold opened the door, and Müller-Brockmann organized the room. But after being arrested by the Nazis in 1933 and forced into exile, Tschichold became deeply suspicious of rigid design ideologies, seeing parallels between modernist absolutism and authoritarian thinking. By the postwar years he had returned to classical book typography and argued that mature design adapts to the task rather than forcing every project into one formula. His career is unusually broad because it influenced both modernist design and the revival of classical book typography.' },
 
   // Artifacts
   { id:'helvetica',   label:'Helvetica',          x: .45, y:-.45, z: .40, r:3, th:['Works'],  meta:'Typeface · Haas Type Foundry · 1957',
@@ -688,7 +688,7 @@ const SYNTH_LIBRARY = [
 <p>This produced work of extraordinary power — and an ideology with a significant blind spot. The claim to universality was made by a small, educated, European elite, mostly male, working in conditions of relative prosperity and institutional support. What they called neutral was, in fact, the aesthetic of a particular class, culture, and historical moment. The International Typographic Style was international in aspiration but Swiss in origin, and the two are not the same thing.</p>
 <p>The generation that followed — Weingart above all — understood this not as a failure of the Swiss project but as its most interesting problem. If the grid was a tool for imposing order, then breaking the grid was a tool for questioning whose order, imposed by whom, and for what purpose. Postmodern typography was not the rejection of Swiss Design. It was Swiss Design examining itself in the mirror and refusing to look away from what it saw.</p>`,
     tens: [
-      'Neue Grafik journal (1958–1965)',
+      'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice',
       'Müller-Brockmann: Grid Systems in Graphic Design (1981)',
       'Armin Hofmann: Graphic Design Manual (1965)',
     ]
@@ -701,8 +701,8 @@ const SYNTH_LIBRARY = [
 <p>The argument rests on a specific theory of objectivity: that communication design has a duty to its audience, and that duty is best fulfilled when the designer removes themselves from the equation. The grid makes this removal possible. It answers "where should this go?" with structural logic rather than aesthetic preference — and in doing so it claims to make design transparent: a window, not a mirror. This is the core proposition of the International Typographic Style: that there exists a universal visual order, accessible through mathematics and discipline, that transcends the particular.</p>
 <p>The proposition is more fragile than it looks. Choosing the grid is itself an aesthetic decision. The column widths, the margins, the spatial relationships between modules — all require judgment, and that judgment is no less personal for being mathematical. What Müller-Brockmann actually achieved was not the elimination of subjectivity but its displacement: from moment-to-moment compositional choices to the foundational decisions about structure that precede them. The grid does not remove the designer. It moves them upstream.</p>`,
     tens: [
-      'Neue Grafik journal (1958–1965)',
-      'Grid Systems in Graphic Design — Müller-Brockmann (1981)',
+      'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice',
+      'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice',
       'Emil Ruder: Typographie (1967)',
     ]
   },
@@ -728,8 +728,8 @@ const SYNTH_LIBRARY = [
 <p>The claim made on Helvetica's behalf — that it is neutral, that it carries no meaning of its own, that it gets out of the way of content — is one of the most consequential fictions in design history. No typeface is neutral. Every typeface makes claims about authority, modernity, legibility, and belonging. Helvetica's claim to neutrality is itself a rhetorical position: it says that the organization using it is rational, modern, and above ideology. Which is, of course, an ideological statement.</p>
 <p>This is why Helvetica appears simultaneously on the New York City Transit Authority's signage and on the logos of multinationals, on NASA materials and on authoritarian governments. It does not transcend ideology — it embodies the ideology of those who consider themselves beyond ideology: technocratic, managerial, confident that the universal is available to them in particular. The universality claim of Swiss Design reaches its most revealing expression in this single typeface, which says nothing about itself and everything about the person who chose it.</p>`,
     tens: [
-      'Neue Grafik journal (1958–1965)',
-      'Grid Systems in Graphic Design — Müller-Brockmann (1981)',
+      'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice',
+      'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice',
       'Emil Ruder: Typographie (1967)',
     ]
   },
@@ -821,7 +821,7 @@ const SYNTH_LIBRARY = [
     tens: [
       'Armin Hofmann: Graphic Design Manual (1965)',
       'Müller-Brockmann: Grid Systems in Graphic Design (1981)',
-      'Neue Grafik journal (1958–1965)',
+      'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice',
     ]
   },
 
@@ -834,7 +834,7 @@ const SYNTH_LIBRARY = [
     tens: [
       'Emil Ruder: Typographie (1967)',
       'Armin Hofmann: Graphic Design Manual (1965)',
-      'Karl Gerstner: Designing Programmes (1964)',
+      'Swiss Graphic Design · Richard Hollis · 2006 — provides historical context for both the grid and mathematical order in Swiss practice',
     ]
   },
 
@@ -886,7 +886,7 @@ const SYNTH_LIBRARY = [
     tens: [
       'Grid Systems in Graphic Design (1981)',
       'Neue Grafik journal, co-founded with Lohse, Neuburg, Vivarelli',
-      'Tonhalle Zürich poster series',
+      'Typographie · Emil Ruder · 1967 — the other pillar of Swiss typographic practice alongside the grid',
     ]
   },
   {
@@ -895,8 +895,8 @@ const SYNTH_LIBRARY = [
     narr: `<p>The International Typographic Style made a claim no design movement before or since has matched for ambition: that it had discovered a visual language adequate to all human communication, everywhere, at all times. Objectivity was the method — remove the designer's personality. The universality claim was the conclusion — what remained after that removal transcended culture and preference.</p>
 <p>The claim was wrong in a specific and instructive way. It was not wrong that clarity and structure serve communication. It was wrong that any particular form of clarity is universal. The grid, the sans-serif, the asymmetric layout are conventions that became so widely distributed they began to feel like nature. The confusion of convention for nature is one of the most consequential errors a design movement can make — it closes off the questions that keep practice alive.</p>`,
     tens: [
-      'Neue Grafik journal (1958–1965)',
-      'Grid Systems in Graphic Design — Müller-Brockmann (1981)',
+      'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice',
+      'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice',
       'Emil Ruder: Typographie (1967)',
     ]
   },
@@ -941,7 +941,7 @@ const SYNTH_LIBRARY = [
     tens: [
       'Armin Hofmann: Graphic Design Manual (1965)',
       'Emil Ruder: Typographie (1967)',
-      'Karl Gerstner: Designing Programmes (1964)',
+      'Swiss Graphic Design · Richard Hollis · 2006 — provides historical context for both the grid and mathematical order in Swiss practice',
     ]
   },
   {
@@ -975,8 +975,8 @@ const SYNTH_LIBRARY = [
 <p>This is the sharpest insight the constellation produces: Objectivity as an ideology did not succeed through its most honest expression — it succeeded through its most seductive one. Frutiger spent his career designing systems of transparent rationalism. The market rewarded the typeface that performed rationalism invisibly. Univers is the more intellectually rigorous achievement. Helvetica is on the New York subway.</p>
 <p>What this reveals about Objectivity itself is uncomfortable: the ideal of neutral, ego-free communication was embraced most completely not by designers who made their method visible, but by corporations who needed their authority to appear natural and inevitable. Helvetica did not transcend ideology — it gave ideology the appearance of having transcended itself. Frutiger, who understood the project most deeply, built the work that proved the point.</p>`,
     tens: [
-      'Neue Grafik journal (1958–1965)',
-      'Grid Systems in Graphic Design — Müller-Brockmann (1981)',
+      'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice',
+      'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice',
       'Emil Ruder: Typographie (1967)',
     ]
   },
@@ -989,8 +989,8 @@ const SYNTH_LIBRARY = [
 <p>Helvetica appeared in 1957, at the moment when the International Typographic Style was consolidating into a recognizable international style. It was in many ways the perfect commercial expression of everything the movement stood for: clean, sans-serif, rational, stripped of historical ornament. But it crystallized the visual language while discarding the intellectual structure behind it. Bill had argued for mathematical proportion as a discipline of thinking. The ITS designers had insisted that the grid was an ethical commitment. Helvetica offered the look without the argument.</p>
 <p>This is the arc the three concepts trace together: a rigorous philosophical position, translated into systematic design practice, then distilled into a typeface that spread the aesthetics globally while the philosophy stayed behind. The ITS and Max Bill share a serious intellectual project. Helvetica is what happened when that project met the world and the world kept the surface.</p>`,
     tens: [
-      'Max Bill: Form, Function, Beauty (1952)',
-      'Neue Grafik journal (1958–1965)',
+      'Form · Max Bill · 1952 — his philosophical argument for mathematical order as the basis of visual form',
+      'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice',
       'Helvetica typeface (1957)',
     ]
   },
@@ -1003,8 +1003,8 @@ const SYNTH_LIBRARY = [
 <p>Helvetica arrived in 1957, nine years after his recantation. It became the dominant typeface of the twentieth century by embodying objectivity so completely that its ideology disappeared — the very condition Tschichold had warned against. Organizations chose it because it felt neutral, inevitable, beyond style. Which is precisely what Tschichold said was impossible and dangerous: the performance of having no position is itself a position, and the more convincing the performance, the more effectively it hides the ideology behind it.</p>
 <p>The triangle these three concepts form is unusually tight. Tschichold built the intellectual foundation for the objectivity ideal. Objectivity became the dominant design ideology of the postwar period. Helvetica became its most successful expression — and its most perfect proof that Tschichold had been right to worry. The typeface that proved the original argument also proved the recantation.</p>`,
     tens: [
-      'Neue Grafik journal (1958–1965)',
-      'Grid Systems in Graphic Design — Müller-Brockmann (1981)',
+      'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice',
+      'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice',
       'Emil Ruder: Typographie (1967)',
     ]
   },
@@ -1062,7 +1062,7 @@ const SYNTH_LIBRARY = [
 <p>The International Typographic Style that emerged in the 1950s was deeply shaped by this inheritance. Its insistence that design could be systematic, that the grid was a rational rather than an arbitrary structure, that objectivity was achievable — these were Bauhaus ideas processed through Bill's particular intellectual formation. The ITS designers rarely cited Bill directly; they did not need to. His arguments had become the assumed framework within which their own more specific arguments were made.</p>
 <p>The relationship also shows something about how intellectual influence actually works in design: not through direct citation or acknowledged debt, but through the gradual naturalization of premises. By the time the ITS was consolidating, Bill's core arguments had become so fundamental that they were invisible — which is the highest form of intellectual influence and the hardest to trace.</p>`,
     tens: [
-      'Max Bill: Form, Function, Beauty (1952)',
+      'Form · Max Bill · 1952 — his philosophical argument for mathematical order as the basis of visual form',
       'HfG Ulm journals',
       'Neue Grafik journal',
     ]
@@ -1094,7 +1094,7 @@ const SYNTH_LIBRARY = [
     tens: [
       'Armin Hofmann: Graphic Design Manual (1965)',
       'ulm journal — HfG Ulm (1958–1968)',
-      'Neue Grafik journal (1958–1965)',
+      'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice',
     ]
   },
 
@@ -1106,7 +1106,7 @@ const SYNTH_LIBRARY = [
 <p>This framing made Müller-Brockmann's approach unusually difficult to simply imitate. The grid without the ethical commitment produced technically correct but spiritually empty work — compositions that looked Swiss but weren't, because the discipline that gave the grid meaning had been replaced by the habit of using it. The reduction without the ethical commitment produced arbitrary minimalism — things removed because minimalism was fashionable, not because they couldn't justify their presence.</p>
 <p>What his best work demonstrates is that the grid and reduction are not methods that produce good design when correctly applied. They are disciplines that produce good design when genuinely practiced — when the designer actually asks, of every element, whether it earns its place, and actually accepts the grid's answer to the question of where things go. The discipline is demanding precisely because it is easy to fake, and the fakes look almost identical to the real thing until you ask what they are trying to communicate.</p>`,
     tens: [
-      'Tonhalle Zürich poster series',
+      'Typographie · Emil Ruder · 1967 — the other pillar of Swiss typographic practice alongside the grid',
       'Grid Systems in Graphic Design (1981)',
       'Müller-Brockmann: The Graphic Artist and his Design Problems (1961)',
     ]
@@ -1126,20 +1126,6 @@ const SYNTH_LIBRARY = [
     ]
   },
 
-
-  {
-    match: ids => ids.includes('muller') && ids.includes('grid') && ids.includes('its'),
-    title: 'Order as ethics, not aesthetics',
-    narr: `<p>Josef Müller-Brockmann did not invent the grid. He moralized it. Before his 1961 poster work and his 1981 manual Grid Systems in Graphic Design, the grid was a practical tool — a way to organize elements efficiently. After him, it was an ethical position: the designer who worked without a grid was not just making uglier work, they were failing their audience. The International Typographic Style inherited this moral charge and built an entire visual ideology around it. The grid became the visible proof that the designer had subordinated their ego to the message.</p>
-<p>The tension this creates is one of the most productive in design history: when a method becomes a moral position, it gains enormous rhetorical power — and loses the ability to question itself. The ITS spread globally in the 1960s and 70s not because designers everywhere independently concluded the grid was right, but because the moral framing made any alternative feel irresponsible. The grid stopped being a choice and became the default. Which means it also stopped being a discipline and became a habit.</p>
-<p>The principle at stake: any design method that transforms from tool to doctrine has solved one problem and created another. The grid as tool produces clarity. The grid as doctrine produces conformity. Müller-Brockmann gave designers a rigorous way to think. The ITS gave them permission to stop thinking once they had adopted it. These are not the same gift.</p>`,
-    tens: [
-      'Neue Grafik journal (1958–1965)',
-      'Grid Systems in Graphic Design — Müller-Brockmann (1981)',
-      'Emil Ruder: Typographie (1967)',
-    ]
-  },
-
   {
     match: ids => ids.includes('hofmann') && ids.includes('ruder') && ids.includes('reduction'),
     title: 'What is left when you stop removing things',
@@ -1147,8 +1133,8 @@ const SYNTH_LIBRARY = [
 <p>The productive tension is that their methods were genuinely incompatible if you tried to combine them directly, but produced deeply compatible work because they shared a fundamental conviction: that discipline is generative, not restrictive. A student who worked through Hofmann's exercises and Ruder's system emerged with two different accounts of why a composition worked — and both accounts were right. The Basel School's unusual range within its constraints came directly from having two pedagogies running in parallel rather than one doctrine.</p>
 <p>The design principle this reveals: reduction is not a style. It is a practice of sustained attention — asking of every element whether it earns its presence, and being willing to accept the answer. What Hofmann and Ruder both understood, and most of their imitators missed, is that this practice takes longer than learning the results. The results of reduction look like minimalism. The practice of reduction produces something else: work that is exactly as complex as it needs to be, and no more.</p>`,
     tens: [
-      'Neue Grafik journal (1958–1965)',
-      'Grid Systems in Graphic Design — Müller-Brockmann (1981)',
+      'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice',
+      'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice',
       'Emil Ruder: Typographie (1967)',
     ]
   },
@@ -1160,8 +1146,8 @@ const SYNTH_LIBRARY = [
 <p>The tension this produces is between the form of Weingart's work and its logic. To an eye trained on the ITS, it looked like expressionism, chaos, the return of everything Swiss Design had spent twenty years eliminating. To anyone who understood what Weingart was actually doing, it was the opposite: a demonstration that the grid was a choice, not a natural law — and that making this visible was more honest than pretending otherwise. His students, particularly April Greiman and Dan Friedman, carried this argument to the United States, where it was largely received as a style rather than a critique.</p>
 <p>The lasting principle: every design tradition produces its own most rigorous critique, and that critique is always misread by its inheritors. Weingart gave design a method for questioning its own assumptions. Postmodern typography received a new aesthetic. The method and the aesthetic are not the same thing — and confusing them is how traditions turn critiques into fashions.</p>`,
     tens: [
-      'Neue Grafik journal (1958–1965)',
-      'Grid Systems in Graphic Design — Müller-Brockmann (1981)',
+      'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice',
+      'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice',
       'Emil Ruder: Typographie (1967)',
     ]
   },
@@ -1186,7 +1172,7 @@ const SYNTH_LIBRARY = [
 <p>The claim was disproved by its own success. When Swiss Design was adopted globally — by Japanese corporations, American institutions, German public agencies — it did not function as a neutral substrate that carried local content without distortion. It carried Swiss content: the postwar Swiss values of rationality, precision, neutrality, and technical competence. Organizations that adopted it were not escaping ideology; they were adopting a specific ideology that had successfully claimed to be the absence of ideology. The universality claim was the most ideologically loaded element of the entire system.</p>
 <p>The principle this reveals has not lost its relevance: every design system that claims neutrality is expressing a specific set of values through the form of that claim. The ITS did not produce neutral communication. It produced communication that looked the way rational, modern, Western institutions believed communication should look — and then mistook that local belief for a universal truth. This is not a flaw in Swiss Design. It is a precise description of how all powerful aesthetic systems work.</p>`,
     tens: [
-      'Neue Grafik journal (1958–1965)',
+      'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice',
       'Müller-Brockmann: The Graphic Artist and his Design Problems (1961)',
       'International Council of Graphic Design Associations (Icograda) founding (1963)',
     ]
@@ -1225,8 +1211,8 @@ const SYNTH_LIBRARY = [
 <p>The three concepts expose a ladder of abstraction that Swiss Design climbed — and a set of risks at each rung. The grid as practice is demanding but honest: it either serves the communication problem or it doesn't, and the work reveals the answer. The grid as manual creates a gap between understanding and application: designers who learn from the book can produce correct-looking work without internalizing the discipline the book was trying to describe. Objectivity as ideology closes the question the practice was meant to keep open: if the grid is morally necessary rather than contextually useful, there is no longer any reason to ask whether it serves this particular problem.</p>
 <p>What this constellation reveals is the characteristic trajectory of Swiss Design's most powerful ideas: rigorous in practice, reductive as doctrine, authoritarian as ideology. The grid did not become a cliché because it was wrong. It became a cliché because the claim made on its behalf — that it was the objectively correct way to organize visual information — made it impossible to question.</p>`,
     tens: [
-      'Grid Systems in Graphic Design — Müller-Brockmann (1981)',
-      'Neue Grafik journal (1958–1965)',
+      'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice',
+      'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice',
       'Müller-Brockmann: The Graphic Artist and his Design Problems (1961)',
     ]
   },
@@ -1280,17 +1266,17 @@ const SYNTH_LIBRARY = [
   { match: ids => ids.includes('agi') && ids.includes('ulm'),
     title: 'Two models of design legitimacy',
     narr: `<p>AGI and the Ulm School both sought to establish design as a legitimate professional and intellectual discipline, but through different means. AGI sought legitimacy through excellence — gathering the best designers and making their shared standards visible. the Ulm School sought it through rigor — grounding design practice in scientific methodology and systematic analysis.</p><p>Both approaches had distinctive vulnerabilities. AGI's model depended on the quality of its members; as the design world grew more diverse, the canon AGI represented became harder to maintain. the Ulm School's model depended on the belief that rational method could ground design practice; when that belief was challenged from within and outside, the institution did not survive.</p><p>Both assumed design needed external legitimation — from prestigious peers or from scientific method. Whether design's legitimacy is better established through the quality of its results than through external frameworks is a question the profession is still working through.</p>`,
-    tens: ['HfG Ulm — ulm journal (1958–1968)', 'AGI annuals (1952–present)', 'Max Bill: Form, Function, Beauty (1952)'] },
+    tens: ['HfG Ulm — ulm journal (1958–1968)', 'AGI annuals (1952–present)', 'Form · Max Bill · 1952 — his philosophical argument for mathematical order as the basis of visual form'] },
 
   { match: ids => ids.includes('agi') && ids.includes('universal-claim'),
     title: 'The network that spread the claim',
     narr: `<p>AGI was one of the primary mechanisms through which the Universality Claim traveled from Swiss studios to practice worldwide. Swiss designers were central to AGI from the beginning, and their approach carried with it the conviction that good design transcended cultural specificity. As Swiss members circulated work at AGI events, their approach became associated with international design quality rather than national design culture.</p><p>The irony is that AGI was itself a mechanism of cultural gatekeeping. Membership was invitation-only and concentrated in Western Europe and North America. The international it represented was a specific international — cosmopolitan, modernist, and shaped by Swiss and northern European design values.</p><p>This does not diminish what AGI achieved — it connected extraordinary practitioners and helped establish shared standards. But it complicates the universality narrative: the claim that Swiss design was culture-free was made and distributed through a very specific cultural network.</p>`,
-    tens: ['AGI annuals (1952–present)', 'Neue Grafik journal (1958–1965)', 'Josef Müller-Brockmann: The Graphic Artist (1961)'] },
+    tens: ['AGI annuals (1952–present)', 'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice', 'Josef Müller-Brockmann: The Graphic Artist (1961)'] },
 
   { match: ids => ids.includes('agi') && ids.includes('zurich'),
     title: 'Institution and network: how Swiss design traveled',
     narr: `<p>The Zürich School and AGI both helped Swiss design spread internationally, but through different mechanisms. The Zürich School spread it through graduates, publications including Neue Grafik, and professional work by associated designers. AGI spread it through personal relationships, shared professional standards, and the prestige of membership.</p><p>the Zürich School's contribution was methodological: the grid-based approach that could be taught, learned, and applied. AGI's contribution was reputational: the assurance that this approach had been validated by the best practitioners in the field. A method without reputation stays local; reputation without method produces fashion rather than discipline.</p><p>The combination of Swiss institutional rigor and AGI's international network explains how a small country's design approach became a global standard in the postwar decades.</p>`,
-    tens: ['Neue Grafik journal (1958–1965)', 'AGI annuals (1952–present)', 'International Council of Graphic Design Associations founding (1963)'] },
+    tens: ['Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice', 'AGI annuals (1952–present)', 'International Council of Graphic Design Associations founding (1963)'] },
 
   { match: ids => ids.includes('bill') && ids.includes('frutiger'),
     title: 'System-builders in different disciplines',
@@ -1305,12 +1291,12 @@ const SYNTH_LIBRARY = [
   { match: ids => ids.includes('bill') && ids.includes('muller'),
     title: 'The theorist and the practitioner',
     narr: `<p>Max Bill and Josef Müller-Brockmann both believed design could be grounded in rational principles rather than aesthetic intuition — but from different directions. Bill came from fine art and architecture, and his argument was philosophical: form and function were different expressions of the same underlying logic. Müller-Brockmann came from commercial practice, and his argument was practical: the grid worked because it produced clarity, and clarity served communication.</p><p>Bill's influence on Swiss design was foundational but indirect — he established the intellectual framework within which the ITS operated. Müller-Brockmann translated that conviction into a specific working method that could be taught, applied, and exported. Without Bill, the ITS lacks its philosophical backbone. Without Müller-Brockmann, it lacks its operational form.</p><p>The pairing reveals how design movements develop: the theorist creates the conditions, the practitioner creates the method, and the method spreads further than the theory that justified it.</p>`,
-    tens: ['Max Bill: Form, Function, Beauty (1952)', 'Grid Systems in Graphic Design — Müller-Brockmann (1981)', 'HfG Ulm — ulm journal (1958–1968)'] },
+    tens: ['Form · Max Bill · 1952 — his philosophical argument for mathematical order as the basis of visual form', 'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice', 'HfG Ulm — ulm journal (1958–1968)'] },
 
   { match: ids => ids.includes('bill') && ids.includes('ruder'),
     title: 'Two convictions about where design begins',
     narr: `<p>Max Bill and Emil Ruder shared a conviction that design practice had to be grounded in something more rigorous than taste, but they located that ground in different places. Bill found it in mathematics — visual form governed by numerical relationships had an integrity that intuitive form could not claim. Ruder found it in language — typography was a system of visual communication, and understanding how that system worked gave design decisions a principled basis.</p><p>These different starting points led to different bodies of work. Bill's most characteristic work treats visual form as an end in itself, meaningful through its internal relationships. Ruder's treats visual form as a means, meaningful through its relationship to the content it communicates. Both are rigorous about different things.</p><p>The Swiss design tradition benefited from having both convictions active simultaneously — the idea that form had intrinsic value, and the idea that form derived its value from communication. The unresolved tension between them kept the tradition alive.</p>`,
-    tens: ['Emil Ruder: Typographie (1967)', 'Max Bill: Form, Function, Beauty (1952)', 'Neue Grafik journal (1958–1965)'] },
+    tens: ['Emil Ruder: Typographie (1967)', 'Form · Max Bill · 1952 — his philosophical argument for mathematical order as the basis of visual form', 'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice'] },
 
   { match: ids => ids.includes('bill') && ids.includes('tschichold'),
     title: 'The Bauhaus and its consequences',
@@ -1330,7 +1316,7 @@ const SYNTH_LIBRARY = [
   { match: ids => ids.includes('expressionism') && ids.includes('universal-claim'),
     title: 'The claim and what it was arguing against',
     narr: `<p>The Universality Claim cannot be understood in isolation from the tradition it was implicitly rejecting. When Swiss designers argued that their visual language transcended cultural specificity, they were arguing against a visual culture where expressionism and decoration were live options. The claim was not made in a vacuum — it was made in a specific postwar European context where the emotional distortion of expressionism had been enlisted by ideologies Swiss modernism was determined to reject.</p><p>Part of what gave Swiss objectivity its force in the postwar period was its distance from the visual culture of nationalism and propaganda, which had drawn heavily on expressionist traditions. Neutrality and the suppression of the designer's presence were not just aesthetic preferences — they were, for this generation, partly a response to what expressive visual culture had been used to do.</p><p>This does not vindicate the universality claim. But it does explain its urgency, and it complicates the postmodern critique: when Weingart's generation pushed back against Swiss objectivity, they were not dealing with a simple aesthetic preference but a conviction forged in response to specific historical events.</p>`,
-    tens: ['Emil Ruder: Typographie (1967)', 'Die neue Typographie — Jan Tschichold (1928)', 'Neue Grafik journal (1958–1965)'] },
+    tens: ['Emil Ruder: Typographie (1967)', 'Die neue Typographie — Jan Tschichold (1928)', 'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice'] },
 
   { match: ids => ids.includes('frutiger') && ids.includes('hofmann'),
     title: 'The systematic and the sensory',
@@ -1340,7 +1326,7 @@ const SYNTH_LIBRARY = [
   { match: ids => ids.includes('frutiger') && ids.includes('muller'),
     title: 'Type and page: two disciplines of the same commitment',
     narr: `<p>Adrian Frutiger and Josef Müller-Brockmann worked in adjacent disciplines — Frutiger designed the typefaces, Müller-Brockmann designed the systems in which they were used — and they shared a fundamental commitment to systematic, rational, legible visual communication. Both approached their work system-first: Univers was conceived as a complete family before any variant was drawn; the grid established relationships before any element was placed.</p><p>Both were solving the same problem at different scales — how do you make a set of visual decisions that are internally consistent and reproducible across different contexts? Frutiger's answer was the numbered type family. Müller-Brockmann's answer was the typographic grid. Both establish a system of relationships in advance that guides individual decisions without determining them.</p><p>The fact that they worked in different disciplines makes their shared approach more revealing. The commitment to systematic design was a general theory about visual communication, applied simultaneously at every level of the design process.</p>`,
-    tens: ['Univers typeface — Adrian Frutiger (1957)', 'Grid Systems in Graphic Design — Müller-Brockmann (1981)', 'Neue Grafik journal (1958–1965)'] },
+    tens: ['Univers typeface — Adrian Frutiger (1957)', 'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice', 'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice'] },
 
   { match: ids => ids.includes('frutiger') && ids.includes('ruder'),
     title: 'The legibility problem from two directions',
@@ -1355,52 +1341,52 @@ const SYNTH_LIBRARY = [
   { match: ids => ids.includes('grid') && ids.includes('math-order'),
     title: 'Proportion and structure: the grid as applied mathematics',
     narr: `<p>The grid and mathematical order are related but not identical. The grid is a specific application — a system of columns and rows organizing elements on a page. Mathematical order is the broader principle — visual decisions grounded in numerical relationships rather than aesthetic intuition. In Swiss design, the two became closely associated because the grid was the most visible and teachable expression of mathematical order in typographic practice.</p><p>What mathematical order provides that aesthetic intuition does not is a basis for decisions that can be explained and justified. When Müller-Brockmann placed a typographic element, he could point to the grid and explain why it was there. The constraint prevented arbitrary placement and required that every decision earn its position.</p><p>The limitation: mathematical order can govern proportion but not meaning. A composition can be geometrically correct and communicatively wrong. The grid answers where does this go? but not what does it say?</p>`,
-    tens: ['Grid Systems in Graphic Design — Müller-Brockmann (1981)', 'Max Bill: Form, Function, Beauty (1952)', 'Karl Gerstner: Designing Programmes (1964)'] },
+    tens: ['Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice', 'Form · Max Bill · 1952 — his philosophical argument for mathematical order as the basis of visual form', 'Swiss Graphic Design · Richard Hollis · 2006 — provides historical context for both the grid and mathematical order in Swiss practice'] },
 
   { match: ids => ids.includes('grid') && ids.includes('zurich'),
     title: 'The city and the system it exported',
     narr: `<p>The typographic grid as a systematic design method is closely associated with the Zürich School — specifically with the designers who taught and worked there in the 1950s and 60s, above all Müller-Brockmann at the Kunstgewerbeschule. the Zürich School's contribution to Swiss design was less philosophical than the Basel School's and more operational: it produced a working method applicable to real client problems, documentable in publications, and teachable to students worldwide.</p><p>The grid was central because it was the most teachable element of the Zürich School approach. You could explain how to construct a grid, how to use it to organize type and image, and how to adapt it to different formats. the Zürich School gave the grid its canonical form; the grid gave the Zürich School's approach its global reach.</p><p>The school's proximity to professional practice meant the grid arrived in the world already tested against real problems. It was a practical method that theorists then explained.</p>`,
-    tens: ['Grid Systems in Graphic Design — Müller-Brockmann (1981)', 'Neue Grafik journal (1958–1965)', 'Tonhalle Zürich poster series'] },
+    tens: ['Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice', 'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice', 'Typographie · Emil Ruder · 1967 — the other pillar of Swiss typographic practice alongside the grid'] },
 
   { match: ids => ids.includes('grid-systems') && ids.includes('helvetica'),
     title: 'The system and its preferred typeface',
     narr: `<p>Grid Systems in Graphic Design and Helvetica are not formally connected — the book does not mandate the typeface, and Helvetica does not require the grid. But in practice they became so closely associated as to be nearly synonymous with Swiss typography. The grid organized space; Helvetica filled it with type that was itself systematic, neutral, and without historical associations. Together they produced a visual language that looked, to its practitioners, like the visual language.</p><p>The combination spread globally for the same reason each element spread individually: it could be learned, applied, and reproduced without proximity to the Swiss tradition. What could not be reproduced by these means was the judgment that made the best Swiss work good rather than merely correct.</p><p>The pairing reveals the gap between the elements of a design approach and the sensibility that animates them. The elements are transmissible. The sensibility requires time, practice, and the kind of sustained attention that cannot be taught from a book.</p>`,
-    tens: ['Grid Systems in Graphic Design — Müller-Brockmann (1981)', 'Helvetica typeface — Miedinger/Hoffmann (1957)', 'Massimo Vignelli: NYC Transit Authority graphics (1970)'] },
+    tens: ['Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice', 'Swiss Graphic Design · Richard Hollis · 2006 — documents how Helvetica and the grid became the dominant combination in Swiss typography', 'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where grid-based Swiss typography made its international case'] },
 
   { match: ids => ids.includes('grid-systems') && ids.includes('math-order'),
     title: 'Applied mathematics at the scale of the page',
     narr: `<p>Grid Systems in Graphic Design is the most explicit application of mathematical order to typographic practice in the Swiss tradition. The manual is full of diagrams showing how grids are constructed from mathematical relationships — column widths derived from type size, margins calculated as fractions of the page dimensions, spatial intervals based on consistent ratios. The grid is an application of the belief that visual decisions grounded in mathematical relationships are more rigorous than those grounded in aesthetic intuition.</p><p>This belief connects the manual to Max Bill's broader argument about the relationship between mathematics and visual form. Müller-Brockmann applied this conviction specifically to print typography; Bill applied it to art and architecture more broadly. The manual is a narrower but more operational version of Bill's philosophical position.</p><p>The shared limitation: mathematical order governs proportion but not purpose. A grid can be mathematically perfect and wrong for the communication problem it is supposed to serve.</p>`,
-    tens: ['Grid Systems in Graphic Design — Müller-Brockmann (1981)', 'Max Bill: Form, Function, Beauty (1952)', 'Karl Gerstner: Designing Programmes (1964)'] },
+    tens: ['Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice', 'Form · Max Bill · 1952 — his philosophical argument for mathematical order as the basis of visual form', 'Swiss Graphic Design · Richard Hollis · 2006 — provides historical context for both the grid and mathematical order in Swiss practice'] },
 
   { match: ids => ids.includes('grid-systems') && ids.includes('muller'),
     title: 'The designer and the book that spread his method',
     narr: `<p>Grid Systems in Graphic Design is inseparable from Josef Müller-Brockmann — not because he invented the grid, but because the book is both a manual and a record of how one designer thought about visual organization over a career. Every diagram reflects decisions he had worked through in practice; every rule articulated emerged from problems he had solved. The book is the distilled practice of a specific designer, made transmissible.</p><p>This is its greatest strength and most significant limitation. As a record of Müller-Brockmann's thinking, the book is extraordinary. As a general account of typographic organization, it presents one approach as though it were the approach, without acknowledging the many problems it does not address.</p><p>The book fixed the method at 1981 — when the conditions of graphic design were about to change substantially. Müller-Brockmann's practice was more adaptive than the book suggests. The book became the system; his practice was always more than the system.</p>`,
-    tens: ['Grid Systems in Graphic Design — Müller-Brockmann (1981)', 'Tonhalle Zürich poster series', 'Josef Müller-Brockmann: The Graphic Artist (1961)'] },
+    tens: ['Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice', 'Typographie · Emil Ruder · 1967 — the other pillar of Swiss typographic practice alongside the grid', 'Josef Müller-Brockmann: The Graphic Artist (1961)'] },
 
   { match: ids => ids.includes('grid-systems') && ids.includes('neue-grafik'),
     title: 'The journal and the manual',
     narr: `<p>Neue Grafik and Grid Systems served complementary functions in establishing Swiss typography internationally. Neue Grafik, published 1958–1965, was the movement's contemporary voice — it documented work as it was being made, argued for the approach's principles, and demonstrated them in its own design. Grid Systems, published in 1981, was retrospective and didactic — it systematized what the movement had developed and gave it a canonical textual form.</p><p>Together they represent the two phases of how design movements establish themselves: first the demonstration of practice through actual work, then the codification of that practice into teachable method. Neue Grafik made the case that Swiss typography worked. Grid Systems explained how it worked.</p><p>The 23-year gap is significant. Neue Grafik appeared when the movement was still forming, still testing its ideas. Grid Systems appeared when those debates had been settled — which is why it could be so confident. The confidence of the manual is possible because the uncertainty of the journal had done its work.</p>`,
-    tens: ['Neue Grafik journal (1958–1965)', 'Grid Systems in Graphic Design — Müller-Brockmann (1981)', 'Josef Müller-Brockmann: History of the Poster (1971)'] },
+    tens: ['Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice', 'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice', 'Josef Müller-Brockmann: History of the Poster (1971)'] },
 
   { match: ids => ids.includes('grid-systems') && ids.includes('univers'),
     title: 'Two systematic approaches to the same problem',
     narr: `<p>Univers and Grid Systems are both systematic solutions to the same problem: how do you make a set of visual decisions that are internally consistent and usable across a wide range of applications? Frutiger solved this for type design by creating a family of 21 variants organized by weight and width. Müller-Brockmann solved it for page design by creating a grid system governing the placement of all elements.</p><p>Both share a structural similarity: they establish a system of relationships before making individual decisions. Frutiger determined how the 55 related to the 75 before drawing either one. Müller-Brockmann determined how columns related to margins before placing any type. The individual elements take their meaning from the system.</p><p>The pairing reveals that Swiss typography's commitment to systematic design was a general philosophy applied simultaneously to type design and layout — producing a coherence between typeface and page that made the best Swiss work feel inevitable rather than constructed.</p>`,
-    tens: ['Univers typeface — Adrian Frutiger (1957)', 'Grid Systems in Graphic Design — Müller-Brockmann (1981)', 'Neue Grafik journal — corporate identity spreads'] },
+    tens: ['Univers typeface — Adrian Frutiger (1957)', 'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice', 'Neue Grafik journal — corporate identity spreads'] },
 
   { match: ids => ids.includes('grid-systems') && ids.includes('visual-hier'),
     title: 'Structure and sequence',
     narr: `<p>Grid Systems establishes where elements go on a page. Visual hierarchy determines the order in which the reader encounters them. The two are related but distinct, and confusing them is one of the most common failures in grid-based design. The grid organizes space; hierarchy organizes attention. A layout can be perfectly gridded and have no hierarchy — every element placed correctly according to the system, none of them telling the reader where to look first.</p><p>Müller-Brockmann understood this. His poster work demonstrates grid and hierarchy working together: the grid provides the structure, and within that structure, variations in scale, weight, and contrast create a sequence of attention guiding the reader. Neither alone produces good communication.</p><p>The gap between grid use and hierarchy awareness is visible in much Swiss-influenced education, where students learn to construct grids carefully without developing the same care for the sequence in which those elements will be read. The grid is teachable from a manual. Hierarchy requires the kind of attention Ruder and Hofmann tried to develop through observation.</p>`,
-    tens: ['Grid Systems in Graphic Design — Müller-Brockmann (1981)', 'Emil Ruder: Typographie (1967)', 'Armin Hofmann: Graphic Design Manual (1965)'] },
+    tens: ['Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice', 'Emil Ruder: Typographie (1967)', 'Armin Hofmann: Graphic Design Manual (1965)'] },
 
   { match: ids => ids.includes('helvetica') && ids.includes('neue-grafik'),
     title: 'The journal that championed the typeface',
     narr: `<p>Neue Grafik and Helvetica arrived in the same years — the journal launched in 1958, Helvetica in 1957 — and the journal became one of the most effective platforms for demonstrating the typeface. Set in Helvetica, designed on a grid, Neue Grafik performed its own argument: this was what modern Swiss typography looked like, and Helvetica was what it used.</p><p>This relationship between advocacy and demonstration is one reason Helvetica spread so effectively. It was used, visibly and successfully, in some of the most authoritative design work of the period. Neue Grafik showed what Helvetica looked like in rigorous, thoughtful hands. Designers worldwide saw the results and adopted the typeface, often without the surrounding system that made it work as well as it did in the journal.</p><p>The combination illustrates how design canons form: not through arguments alone but through the circulation of prestigious examples. Neue Grafik was prestigious; it used Helvetica; Helvetica became prestigious. The typeface and the journal are entangled in ways neither could have achieved independently.</p>`,
-    tens: ['Neue Grafik journal — all 18 issues (1958–1965)', 'Helvetica typeface — Miedinger/Hoffmann (1957)', 'Josef Müller-Brockmann: History of the Poster (1971)'] },
+    tens: ['Neue Grafik journal — all 18 issues (1958–1965)', 'Swiss Graphic Design · Richard Hollis · 2006 — documents how Helvetica and the grid became the dominant combination in Swiss typography', 'Josef Müller-Brockmann: History of the Poster (1971)'] },
 
   { match: ids => ids.includes('hofmann') && ids.includes('muller'),
     title: 'Two teachers, one tradition, different methods',
     narr: `<p>Armin Hofmann and Josef Müller-Brockmann were the two dominant figures of Swiss design education, working in the same tradition at roughly the same time. They were not the same designer. Müller-Brockmann worked from systems — the grid gave every decision a rational basis, and the results were replicable and teachable. Hofmann worked from observation — students spent months developing judgment about a single visual element before touching a layout. You could learn the Müller-Brockmann system from a book. You could not learn the Hofmann method from one.</p><p>This difference had practical consequences. The the Zürich School approach spread globally through the ITS precisely because it was systematic. The the Basel School approach produced designers harder to place in a single style because they had developed visual sensibility rather than visual method.</p><p>Together they represent the two poles of Swiss design pedagogy. The systematic approach makes excellence reproducible. The observational approach makes excellence possible in situations the system cannot anticipate. Both are incomplete without the other.</p>`,
-    tens: ['Armin Hofmann: Graphic Design Manual (1965)', 'Grid Systems in Graphic Design — Müller-Brockmann (1981)', 'Neue Grafik journal (1958–1965)'] },
+    tens: ['Armin Hofmann: Graphic Design Manual (1965)', 'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice', 'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice'] },
 
   { match: ids => ids.includes('hofmann') && ids.includes('tschichold'),
     title: 'Rules made and unmade',
@@ -1420,32 +1406,32 @@ const SYNTH_LIBRARY = [
   { match: ids => ids.includes('its') && ids.includes('ulm'),
     title: 'The style and the school that tried to go deeper',
     narr: `<p>The International Typographic Style and the Ulm School were parallel projects in the same postwar design culture, with significant overlap: Max Bill was an important figure in both Swiss modernism and the Ulm School, and the systematic approach the Ulm School advocated resonated with the grid-based, rational approach of the ITS. But they were not the same project.</p><p>The ITS was primarily a visual style — recognizable, reproducible, and teachable from examples and manuals. the Ulm School was trying to do something harder: to ground design practice in scientific methodology, to make design intellectually rigorous at a level that went beyond visual consistency.</p><p>the Ulm School's ambition exceeded its institutional survival — the school closed in 1968. The ITS continued as a global visual practice long after the Ulm School's specific ambitions had been absorbed and diluted. The more legible project outlasted the more rigorous one.</p>`,
-    tens: ['HfG Ulm — ulm journal (1958–1968)', 'Neue Grafik journal (1958–1965)', 'Max Bill: Form, Function, Beauty (1952)'] },
+    tens: ['HfG Ulm — ulm journal (1958–1968)', 'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice', 'Form · Max Bill · 1952 — his philosophical argument for mathematical order as the basis of visual form'] },
 
   { match: ids => ids.includes('its') && ids.includes('univers'),
     title: 'The movement and its preferred type system',
     narr: `<p>Univers and the International Typographic Style arrived together in 1957, and their pairing was more than coincidental. The ITS had established the theoretical case for systematic, neutral, sans-serif typography. Univers provided the type system that most completely embodied those principles: designed as a complete, systematically organized family, with explicit logical relationships between its 21 variants, built on the premise that type should be functional and consistent rather than expressive or historical.</p><p>Where Helvetica achieved neutrality through the feeling of inevitability, Univers achieved it through explicit system design. The ITS's commitment to rational method found a more complete expression in Univers than in Helvetica — Frutiger's numbered family was the type system the movement's philosophy implied.</p><p>Univers remains the typeface that designers who understand the ITS at the level of principle prefer. Helvetica is the typeface that designers who know the ITS at the level of appearance reach for.</p>`,
-    tens: ['Univers typeface — Adrian Frutiger (1957)', 'Neue Grafik journal (1958–1965)', 'Grid Systems in Graphic Design — Müller-Brockmann (1981)'] },
+    tens: ['Univers typeface — Adrian Frutiger (1957)', 'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice', 'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice'] },
 
   { match: ids => ids.includes('math-order') && ids.includes('visual-hier'),
     title: 'Proportion and sequence',
     narr: `<p>Mathematical order and visual hierarchy are two different types of design control, and Swiss design sometimes conflated them. Mathematical order governs spatial proportion — the relationships between column widths, margins, type sizes, and spatial intervals. Visual hierarchy governs sequence — the order in which a reader encounters and processes elements on a page. Both matter, and both can be managed with precision. But they are not the same kind of precision.</p><p>The grid, as the Swiss tradition used it, was primarily an instrument of mathematical order — it established spatial relationships. Using the grid did not automatically create hierarchy; it created a field within which hierarchy could be established through size, weight, contrast, and placement.</p><p>The best Swiss work used mathematical order as the foundation and visual hierarchy as the structure built on that foundation. Emil Ruder's Typographie addresses both — the proportional system and the reading sequence — without treating them as the same problem.</p>`,
-    tens: ['Emil Ruder: Typographie (1967)', 'Grid Systems in Graphic Design — Müller-Brockmann (1981)', 'Karl Gerstner: Designing Programmes (1964)'] },
+    tens: ['Emil Ruder: Typographie (1967)', 'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice', 'Swiss Graphic Design · Richard Hollis · 2006 — provides historical context for both the grid and mathematical order in Swiss practice'] },
 
   { match: ids => ids.includes('muller') && ids.includes('neue-grafik'),
     title: 'The designer and the journal he co-founded',
     narr: `<p>Josef Müller-Brockmann was one of four co-founders of Neue Grafik, along with Richard Lohse, Hans Neuburg, and Carlo Vivarelli — and the journal was a vehicle for the approach he and his colleagues were developing in practice. Neue Grafik demonstrated Swiss typography in its own design: grid-based, set in Helvetica, systematically organized. Reading it is reading a manifesto that performs its own argument.</p><p>The relationship between Müller-Brockmann's studio practice and his role at Neue Grafik was reciprocal. The journal gave the practice a platform and a critical framework; the practice gave the journal credibility. Neither would have had the same reach without the other.</p><p>Neue Grafik also placed Müller-Brockmann within a collective — his contribution to Swiss design was not solo but collaborative, embedded in a network of colleagues who shared his convictions and reinforced them through the journal's eighteen issues.</p>`,
-    tens: ['Neue Grafik journal — all 18 issues (1958–1965)', 'Tonhalle Zürich poster series', 'Grid Systems in Graphic Design — Müller-Brockmann (1981)'] },
+    tens: ['Neue Grafik journal — all 18 issues (1958–1965)', 'Typographie · Emil Ruder · 1967 — the other pillar of Swiss typographic practice alongside the grid', 'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice'] },
 
   { match: ids => ids.includes('muller') && ids.includes('ruder'),
     title: 'Zürich and Basel: the two centers',
     narr: `<p>Josef Müller-Brockmann and Emil Ruder represent the two poles of Swiss design pedagogy — the Zürich School and the Basel School — and their parallel careers show how a single design tradition can contain genuinely different approaches. Müller-Brockmann's the Zürich School approach was systematic and practical: the grid gave every decision a rational basis, the results were replicable, and the method was exportable. Ruder's the Basel School approach was observational and linguistic: typography existed to serve reading, and understanding how that service worked required developing sensitivity to type's visual properties.</p><p>They were not in opposition — both believed design should be rigorous, both rejected arbitrary aestheticism, both produced extraordinary work and extraordinary graduates. But the differences in their methods produced different types of designers. the Zürich School graduates tended to produce consistent, recognizable work across different contexts. the Basel School graduates tended to produce work that varied more but maintained quality when the standard situations ran out.</p><p>The Swiss design tradition is richer for having had both. The systematic approach makes excellence reproducible; the observational approach makes excellence sustainable.</p>`,
-    tens: ['Emil Ruder: Typographie (1967)', 'Grid Systems in Graphic Design — Müller-Brockmann (1981)', 'Neue Grafik journal (1958–1965)'] },
+    tens: ['Emil Ruder: Typographie (1967)', 'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice', 'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice'] },
 
   { match: ids => ids.includes('muller') && ids.includes('zurich'),
     title: 'A designer and the city that shaped him',
     narr: `<p>Josef Müller-Brockmann and the Zürich School are so closely associated that it is sometimes difficult to separate the designer's influence from the institution's. Müller-Brockmann taught at the school for decades while simultaneously running a studio producing real commercial and institutional work — the Tonhalle concert poster series, corporate identities, exhibition design. The school and the studio were not separate projects but mutually reinforcing activities.</p><p>the Zürich School's contribution to Swiss design — the systematic, grid-based approach that spread globally — is primarily Müller-Brockmann's contribution given institutional form. Without the school, his ideas would have spread more slowly. Without his ideas, the school would have been less distinctive.</p><p>The relationship also illustrates the importance of institutional base for design influence: the designers who changed practice most durably were almost always also educators, embedded in institutions that gave their ideas continuous transmission. Reputation spreads; pedagogy multiplies.</p>`,
-    tens: ['Grid Systems in Graphic Design — Müller-Brockmann (1981)', 'Tonhalle Zürich poster series', 'Neue Grafik journal (1958–1965)'] },
+    tens: ['Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice', 'Typographie · Emil Ruder · 1967 — the other pillar of Swiss typographic practice alongside the grid', 'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice'] },
 
   { match: ids => ids.includes('neue-grafik') && ids.includes('objectivity'),
     title: 'The journal as embodied argument',
@@ -1455,12 +1441,12 @@ const SYNTH_LIBRARY = [
   { match: ids => ids.includes('neue-grafik') && ids.includes('ruder'),
     title: 'Two platforms for the same conviction',
     narr: `<p>Emil Ruder and Neue Grafik were both engaged in the project of establishing Swiss typography as a principled, international practice — Ruder through teaching at the Basel School, the journal through publishing and advocacy. Ruder was not one of the four Neue Grafik editors, but his work and ideas circulated in the same world, and the pedagogical approach he was developing at the Basel School informed the broader Swiss design culture the journal represented.</p><p>The difference in their modes of influence is instructive. Ruder's influence was transmitted through students — slow, deep, dependent on direct contact. Neue Grafik's influence was transmitted through circulation — fast, wide, dependent on the persuasiveness of the examples and arguments it published.</p><p>The pairing illustrates the relationship between education and publication in design culture: the school builds the practice, the journal builds the reputation. Neither alone produces a movement. Together they create a tradition that can outlast the individuals who founded it.</p>`,
-    tens: ['Emil Ruder: Typographie (1967)', 'Neue Grafik journal (1958–1965)', 'Basel School archives'] },
+    tens: ['Emil Ruder: Typographie (1967)', 'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice', 'Basel School archives'] },
 
   { match: ids => ids.includes('neue-grafik') && ids.includes('univers'),
     title: 'The journal and the typeface it did not use',
     narr: `<p>Neue Grafik was set in Helvetica, not Univers — but Univers was present in its world and pages, as a peer and sometimes a subject. Both typefaces arrived in 1957, the year before the journal launched, and the journal was in a sense the publication where the question of which typeface most completely embodied Swiss design's values was implicitly being worked out.</p><p>Univers, with its explicit systematic organization and numbered family, was in some ways more consistent with Neue Grafik's editorial position — a type system built on visible rational principles rather than the more intuitive neutrality of Helvetica. That the journal used Helvetica tells us something about how design decisions are actually made: the most theoretically consistent choice and the most practically appealing one are often not the same.</p><p>Both typefaces were central to the same design culture, and their coexistence — as alternatives rather than competitors — gave practitioners a choice that was also an argument: do you believe type should feel inevitable, or do you believe it should be systematically legible?</p>`,
-    tens: ['Neue Grafik journal (1958–1965)', 'Univers typeface — Adrian Frutiger (1957)', 'Helvetica typeface — Miedinger/Hoffmann (1957)'] },
+    tens: ['Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice', 'Univers typeface — Adrian Frutiger (1957)', 'Swiss Graphic Design · Richard Hollis · 2006 — documents how Helvetica and the grid became the dominant combination in Swiss typography'] },
 
   { match: ids => ids.includes('objectivity') && ids.includes('postmodern'),
     title: 'The claim and the deconstruction it invited',
@@ -1470,7 +1456,7 @@ const SYNTH_LIBRARY = [
   { match: ids => ids.includes('objectivity') && ids.includes('zurich'),
     title: 'Where the claim was made most confidently',
     narr: `<p>the Zürich School was the center where Swiss design's claim to objectivity was made most confidently and applied most systematically. Müller-Brockmann's grid-based work, Neue Grafik, the professional and institutional design produced by the Zürich School-associated designers — all carried the implicit argument that this was the correct way to organize visual information. Not a preference, not a style, but a rational response to the communication problems design was supposed to solve.</p><p>The confidence was partly institutional — the Zürich School and the professional network around it gave the approach a solidity that made it look self-evidently correct rather than culturally specific. When you see the same approach applied consistently by different designers in the same milieu, the approach starts to look like the approach rather than an approach.</p><p>What the Zürich School's relationship to objectivity reveals is how design positions become naturalized: through repetition, institutional support, and the circulation of high-quality examples.</p>`,
-    tens: ['Neue Grafik journal (1958–1965)', 'Grid Systems in Graphic Design — Müller-Brockmann (1981)', 'Josef Müller-Brockmann: The Graphic Artist (1961)'] },
+    tens: ['Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice', 'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice', 'Josef Müller-Brockmann: The Graphic Artist (1961)'] },
 
   { match: ids => ids.includes('postmodern') && ids.includes('tschichold'),
     title: 'The rule-writer and the rule-breakers',
@@ -1510,17 +1496,17 @@ const SYNTH_LIBRARY = [
   { match: ids => ids.includes('basel') && ids.includes('ruder'),
     title: 'Rigor as pedagogy',
     narr: `<p>Emil Ruder and the Basel School were mutually constitutive: Ruder shaped the Basel School's approach to typography for decades, and the Basel School gave Ruder's ideas institutional form and reach. His conviction that type exists to be read — and that everything in a typographic composition should serve that purpose — became the foundation of a pedagogy that trained generations of designers in a discipline genuinely difficult to transmit.</p><p>The difficulty was not technical but perceptual. Ruder was not teaching students to set type correctly — that was a technical skill learnable from instruction. He was teaching them to see how type worked: how spacing affected rhythm, how white space activated surrounding elements, how the visual properties of letterforms were independent of the words they spelled.</p><p>Ruder's lasting contribution through the Basel School was not a style but a practice: the habit of looking at type as a visual phenomenon before engaging with it as a linguistic one. Designers trained this way produce different work — slower, more considered, more sensitive to the interaction between form and space.</p>`,
-    tens: ['Emil Ruder: Typographie (1967)', 'Basel School typography exercises', 'Neue Grafik journal (1958–1965)'] },
+    tens: ['Emil Ruder: Typographie (1967)', 'Basel School typography exercises', 'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice'] },
 
   { match: ids => ids.includes('basel') && ids.includes('ulm'),
     title: 'Two schools, two approaches to rigor',
     narr: `<p>The Basel School and the Ulm School were the two most influential design educational institutions in postwar Europe, and their approaches to rigor were fundamentally different. the Basel School developed rigor through perceptual training — months of foundational exercises building visual judgment through direct observation. the Ulm School developed rigor through systematic analysis — courses in information theory, semiotics, and scientific methodology that aimed to give design practice an intellectual foundation comparable to the natural sciences.</p><p>Both were responding to the same diagnosis: that design needed to be more than skilled craft or aesthetic sensibility. But they had different ideas about what more meant. the Basel School thought it meant deeper visual judgment. the Ulm School thought it meant broader analytical framework.</p><p>the Ulm School closed in 1968; the Basel School continued as an influential institution for decades longer. The contrast in longevity reflects something about the two types of rigor: the Basel School's perceptual approach was harder to challenge in principle, because it did not make falsifiable claims. the Ulm School's analytical approach was more ambitious and more vulnerable.</p>`,
-    tens: ['Armin Hofmann: Graphic Design Manual (1965)', 'HfG Ulm — ulm journal (1958–1968)', 'Max Bill: Form, Function, Beauty (1952)'] },
+    tens: ['Armin Hofmann: Graphic Design Manual (1965)', 'HfG Ulm — ulm journal (1958–1968)', 'Form · Max Bill · 1952 — his philosophical argument for mathematical order as the basis of visual form'] },
 
   { match: ids => ids.includes('bill') && ids.includes('basel'),
     title: 'The founder and the school that outlasted him',
     narr: `<p>Max Bill co-founded the Ulm School in 1953 and left it under difficult circumstances in 1956 — forced out by colleagues who felt his approach was too artistic and insufficiently systematic. The Basel School, which he did not found, outlasted him and the Ulm School both, and remains influential today. The contrast is instructive about what design institutions need to survive.</p><p>Bill's ambition at the Ulm School was to create a new kind of designer: someone equally at home with visual problems and analytical ones, capable of working at the intersection of art, science, and design. It was a genuinely original educational project, and it failed as an institution partly because that originality created irresolvable tensions about method and purpose.</p><p>the Basel School's survival came from a different kind of clarity: not clarity about what design is but clarity about how to develop visual judgment. Hofmann and Ruder never claimed to be creating a new synthesis of art and science. They claimed to be developing the capacity to see carefully, which turned out to be a more durable institutional foundation.</p>`,
-    tens: ['Max Bill: Form, Function, Beauty (1952)', 'Armin Hofmann: Graphic Design Manual (1965)', 'HfG Ulm — ulm journal (1958–1968)'] },
+    tens: ['Form · Max Bill · 1952 — his philosophical argument for mathematical order as the basis of visual form', 'Armin Hofmann: Graphic Design Manual (1965)', 'HfG Ulm — ulm journal (1958–1968)'] },
 
   { match: ids => ids.includes('reduction') && ids.includes('basel'),
     title: 'The school that made reduction a discipline',
@@ -1532,7 +1518,62 @@ const SYNTH_LIBRARY = [
     narr: `<p>the Basel School's approach to visual hierarchy is distinctive because of the order in which it was taught. Before students touched a layout problem, they spent months on foundational visual exercises — studying how a single mark relates to its surrounding space, how size creates emphasis, how repetition creates rhythm, how contrast creates focus. The purpose was not to teach rules about hierarchy but to develop the perceptual sensitivity that makes hierarchy possible without rules.</p><p>This sequence — perception before placement, observation before organization — produced a different understanding of visual hierarchy than the one taught from grid manuals. The manual-trained designer learns that the most important element should be largest, that hierarchy proceeds through size and weight in a defined order. The the Basel School-trained designer develops a sense of what draws attention and why, allowing for hierarchies built from contrast, position, isolation, and rhythm.</p><p>Hofmann's poster work is the clearest demonstration of what this produces: compositions where hierarchy is felt rather than described, where the reader moves through the content in a designed sequence without seeing the design. This is the hardest thing to teach in design, which is why the Basel School spent so long building the perceptual foundation before addressing it.</p>`,
     tens: ['Armin Hofmann: Graphic Design Manual (1965)', 'Basel School visual exercises (1950s–1970s)', 'Emil Ruder: Typographie (1967)'] },
 
-  { match: () => true, title: null, narr: null, tens: ['Neue Grafik journal (1958–1965)', 'Grid Systems in Graphic Design — Müller-Brockmann (1981)', 'Emil Ruder: Typographie (1967)'] }
+  {
+    match: ids => ids.includes('ruder') && ids.includes('grid'),
+    title: 'The grid as typography, not just layout',
+    narr: `<p>Emil Ruder's relationship to the grid was different from Josef Müller-Brockmann's. Where Müller-Brockmann systematized the grid as a layout tool — columns, margins, proportions — Ruder approached it through typography. For him, the grid was less about where to place elements on a page and more about the internal rhythm of text itself: the spacing between letters, the relationship between line length and leading, the way white space gives type room to breathe. The grid, in Ruder's teaching at the Basel School of Design, was the underlying structure that made typography feel ordered rather than arbitrary.</p><p>This distinction matters because it shows that the grid meant different things to different Swiss designers. Müller-Brockmann's grid was structural and visible in the organization of a whole page. Ruder's was more subtle — felt in the texture of a paragraph rather than the architecture of a spread. Both were trying to bring rational discipline to visual communication, but they were working at different scales.</p>`,
+    tens: [
+      'Typographie · Emil Ruder · 1967 — his account of typography as a disciplined system, where the grid operates at the level of text rather than page structure',
+      'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the contrasting approach, where the grid operates at the level of page architecture',
+      'Swiss Graphic Design · Richard Hollis · 2006 — covers both figures and makes their different emphases visible',
+    ]
+  },
+
+  {
+    match: ids => ids.includes('hofmann') && ids.includes('grid'),
+    title: 'Structure as a starting point, not an answer',
+    narr: `<p>Armin Hofmann used the grid, but he was skeptical of it as a doctrine. His teaching at the Basel School of Design was built around developing visual judgment through practice — students learning to feel how elements relate to space before they touched any system. The grid was one possible outcome of that judgment, not its precondition. A student who understood visual relationships deeply might arrive at a grid-like structure organically. A student who applied the grid without that understanding would produce work that looked ordered but felt empty.</p><p>This is the key difference between Hofmann's approach and Müller-Brockmann's. Müller-Brockmann gave designers a system and trusted that discipline in applying it would produce good work. Hofmann gave designers a way of seeing and trusted that structure would follow. His poster work demonstrates the difference: the compositions feel inevitable rather than systematic, as if the grid were discovered rather than imposed.</p>`,
+    tens: [
+      'Graphic Design Manual · Armin Hofmann · 1965 — his account of visual discipline as the foundation from which structure emerges',
+      'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the contrasting position, where the grid is the starting point rather than the outcome',
+      'Swiss Graphic Design · Richard Hollis · 2006 — covers Hofmann\'s poster work and teaching, showing how structure operated in his practice',
+    ]
+  },
+
+  {
+    match: ids => ids.includes('bill') && ids.includes('grid'),
+    title: 'The grid as applied mathematics',
+    narr: `<p>Max Bill's connection to the grid runs through mathematics rather than typography or layout. He believed that visual form could be grounded in rational structure — that compositions built on geometric and mathematical relationships would have a coherence that intuitive composition couldn't achieve. The grid, in this framework, was one application of a broader principle: that proportion derived from reason was more reliable than proportion derived from feel. His Junghans watch design, his concrete art, and his work at the Ulm School of Design all reflect the same conviction.</p><p>Bill's approach gives the grid a different justification from the one Swiss graphic designers usually offered. Müller-Brockmann argued for the grid because it served communication. Bill argued for mathematical order because it produced genuine aesthetic experience. These are related but distinct claims. Is the grid a tool for helping readers, or a system for achieving visual integrity? Bill's answer was the second. Most Swiss graphic designers would have said both — but their practice looked more like the first.</p>`,
+    tens: [
+      'Form · Max Bill · 1952 — his philosophical argument for mathematical order as the foundation of good visual form',
+      'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the functional argument for the grid, useful for reading against Bill\'s mathematical one',
+      'Ulm Design: The Morality of Objects · Herbert Lindinger, ed. · 1991 — the institutional context where Bill\'s approach to systematic form was developed most fully',
+    ]
+  },
+
+  {
+    match: ids => ids.includes('frutiger') && ids.includes('grid'),
+    title: 'The grid at the scale of a letterform',
+    narr: `<p>Adrian Frutiger didn't design page layouts — he designed typefaces. But his approach to type design operated on principles very close to the grid. His typeface Univers was built as a system of 21 variants organized by a numbered grid of weight and width, with consistent mathematical relationships between them. Each variant was designed not as a standalone typeface but as part of a family where everything related to everything else by a derivable logic. That's grid thinking applied at the scale of individual letters rather than pages.</p><p>When Univers appeared inside a Müller-Brockmann layout, two levels of grid thinking were operating simultaneously — one at the scale of the page, one at the scale of each letter on it. Frutiger was solving a different problem, but he reached for the same solution: a rational system where every element is derivable from a shared structure. His typefaces worked so well inside Swiss grid-based layouts partly because they were built on the same underlying logic.</p>`,
+    tens: [
+      'Adrian Frutiger – Typefaces: The Complete Works · Heidrun Osterer and Philipp Stamm · 2008 — shows the Univers numbering system in detail, making the grid logic of the typeface family explicit',
+      'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the page-level grid that Frutiger\'s typefaces were regularly used within',
+      'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where both levels of grid thinking appeared together in practice',
+    ]
+  },
+
+  {
+    match: ids => ids.includes('tschichold') && ids.includes('grid'),
+    title: 'The grid before it was called a grid',
+    narr: `<p>Jan Tschichold's 1928 book Die neue Typographie didn't use the word "grid" in the way Müller-Brockmann would later use it, but it argued for the same underlying principle: that pages should be organized by rational, mathematical relationships rather than tradition or intuition. Asymmetric layouts, strong alignment, careful use of white space — these were all ways of imposing a logical structure on the page. Tschichold opened the door to systematic layout thinking that Swiss designers would later walk through and formalize.</p><p>The irony is that by the time Müller-Brockmann's grid system had become doctrine, Tschichold had moved away from it. His later work returned to classical book typography and he argued that any system applied as a universal rule becomes a problem. He had helped create the conditions for Swiss grid-based design and then, characteristically, refused to be bound by them.</p>`,
+    tens: [
+      'Die neue Typographie · Jan Tschichold · 1928 — the earliest argument for rational page structure that Swiss grid thinking would later build on',
+      'The Form of the Book · Jan Tschichold · 1975 — his mature position, showing what typography looks like when it serves specific content rather than a system',
+      'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the formalization of what Tschichold helped make possible, and that he also warned against',
+    ]
+  },
+
+  { match: () => true, title: null, narr: null, tens: ['Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss designers demonstrated grid-based practice', 'Grid Systems in Graphic Design · Josef Müller-Brockmann · 1981 — the primary text for understanding the grid as systematic design practice', 'Emil Ruder: Typographie (1967)'] }
 ];
 
 function generateSynthesis(ids) {
@@ -1552,12 +1593,13 @@ function generateSynthesis(ids) {
     ? rest.slice(0,-1).map(n=>`${n}`).join(', ')+' and '+rest[rest.length-1]+''
     : `${rest[0]||''}`;
 
-  const fallbackNarr=`<p>${pivot} and ${restFormatted} both belong to the same moment in design history — postwar Switzerland, where a generation of designers and educators developed a shared conviction that visual communication could be rational, principled, and explainable. What connects them isn't a direct historical relationship so much as a shared context: they were shaped by the same arguments, the same institutions, and the same sense that design had a responsibility to serve the reader rather than express the designer.</p><p>Looking at them together reveals something about how a design movement actually works. No single person, concept, or institution created Swiss design — it emerged from the interaction between people, ideas, schools, and artifacts that reinforced and sometimes challenged each other. ${pivot} and ${restFormatted} are two nodes in that network. The question worth asking is what each contributes that the other doesn't, and what the combination reveals that neither would alone.</p>`;
+  // Build fallback from full node descriptions in selection order
+  const fallbackNarr = selected.map(n => `<p>${n.desc}</p>`).join('');
 
   const fallbackTens=[
-    'Swiss Graphic Design · Richard Hollis · 2006 — the most comprehensive historical account of the movement both concepts belong to',
-    'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where Swiss design explained itself to the world, useful context for any pairing within the movement',
-    'Typographie · Emil Ruder · 1967 — one of the three foundational texts of Swiss typography, relevant as background to almost any combination of Swiss design concepts',
+    'Swiss Graphic Design · Richard Hollis · 2006 — the most comprehensive overview of the movement, useful background for any pairing of Swiss design concepts',
+    'Neue Grafik · Lohse, Müller-Brockmann, Neuburg, Vivarelli · 1958–1965 — the journal where the movement explained itself, covering most of the people and ideas in this graph',
+    'Typographie · Emil Ruder · 1967 — one of the three core texts of Swiss typography alongside Hofmann\'s Graphic Design Manual and Müller-Brockmann\'s Grid Systems',
   ];
 
   const fallbackTitle=names.length>2
